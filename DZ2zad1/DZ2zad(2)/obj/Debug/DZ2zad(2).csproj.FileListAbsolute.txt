@@ -1,8 +1,0 @@
-E:\proga_Visual\Windows_Form\DZ2zad1\DZ2zad(2)\bin\Debug\DZ2zad(2).exe.config
-E:\proga_Visual\Windows_Form\DZ2zad1\DZ2zad(2)\bin\Debug\DZ2zad(2).exe
-E:\proga_Visual\Windows_Form\DZ2zad1\DZ2zad(2)\bin\Debug\DZ2zad(2).pdb
-E:\proga_Visual\Windows_Form\DZ2zad1\DZ2zad(2)\obj\Debug\DZ2zad_2_.Form1.resources
-E:\proga_Visual\Windows_Form\DZ2zad1\DZ2zad(2)\obj\Debug\DZ2zad_2_.Properties.Resources.resources
-E:\proga_Visual\Windows_Form\DZ2zad1\DZ2zad(2)\obj\Debug\DZ2zad(2).csproj.GenerateResource.Cache
-E:\proga_Visual\Windows_Form\DZ2zad1\DZ2zad(2)\obj\Debug\DZ2zad(2).exe
-E:\proga_Visual\Windows_Form\DZ2zad1\DZ2zad(2)\obj\Debug\DZ2zad(2).pdb
