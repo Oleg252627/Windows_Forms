@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -35,6 +36,7 @@
             this.button1_S = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3_GlobalSumm = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,9 +69,9 @@
             this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(174, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 25);
+            this.label1.Size = new System.Drawing.Size(231, 25);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Рсчет всей суммы";
+            this.label1.Text = "Разсчет всей суммы";
             // 
             // label2_Sum
             // 
@@ -120,6 +122,10 @@
             this.label3_GlobalSumm.TabIndex = 6;
             this.label3_GlobalSumm.Text = "0";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 4000;
+            // 
             // FirstCastomControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,5 +156,6 @@
         private System.Windows.Forms.Button button1_S;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3_GlobalSumm;
+        private System.Windows.Forms.Timer timer1;
     }
 }

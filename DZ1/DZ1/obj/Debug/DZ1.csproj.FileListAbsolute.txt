@@ -1,0 +1,8 @@
+E:\proga_Visual\Windows_Form\DZ1\DZ1\bin\Debug\DZ1.exe.config
+E:\proga_Visual\Windows_Form\DZ1\DZ1\bin\Debug\DZ1.exe
+E:\proga_Visual\Windows_Form\DZ1\DZ1\bin\Debug\DZ1.pdb
+E:\proga_Visual\Windows_Form\DZ1\DZ1\obj\Debug\DZ1.csprojResolveAssemblyReference.cache
+E:\proga_Visual\Windows_Form\DZ1\DZ1\obj\Debug\DZ1.Properties.Resources.resources
+E:\proga_Visual\Windows_Form\DZ1\DZ1\obj\Debug\DZ1.csproj.GenerateResource.Cache
+E:\proga_Visual\Windows_Form\DZ1\DZ1\obj\Debug\DZ1.exe
+E:\proga_Visual\Windows_Form\DZ1\DZ1\obj\Debug\DZ1.pdb

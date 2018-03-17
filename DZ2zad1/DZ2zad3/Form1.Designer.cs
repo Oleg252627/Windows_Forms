@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button2_Summ = new System.Windows.Forms.Button();
+            this.button2_Fod = new System.Windows.Forms.Button();
+            this.button2_Toplivo = new System.Windows.Forms.Button();
             this.panel5_Focus = new System.Windows.Forms.Panel();
+            this.button2_Glav = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2_Svorach = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2_Summ = new System.Windows.Forms.Button();
-            this.button2_Fod = new System.Windows.Forms.Button();
-            this.button2_Toplivo = new System.Windows.Forms.Button();
-            this.button2_Glav = new System.Windows.Forms.Button();
             this.firstCastomToplivo1 = new DZ2zad3.FirstCastomToplivo();
             this.firstCastomFud1 = new DZ2zad3.FirstCastomFud();
             this.firstCastomControl1 = new DZ2zad3.FirstCastomControl();
@@ -68,6 +68,69 @@
             this.panel1.Size = new System.Drawing.Size(175, 538);
             this.panel1.TabIndex = 0;
             // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = global::DZ2zad3.Properties.Resources.Business_Questions_icon1;
+            this.button5.Location = new System.Drawing.Point(12, 500);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(26, 23);
+            this.button5.TabIndex = 15;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button2_Summ
+            // 
+            this.button2_Summ.FlatAppearance.BorderSize = 0;
+            this.button2_Summ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2_Summ.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2_Summ.ForeColor = System.Drawing.Color.White;
+            this.button2_Summ.Image = global::DZ2zad3.Properties.Resources._55;
+            this.button2_Summ.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2_Summ.Location = new System.Drawing.Point(12, 273);
+            this.button2_Summ.Name = "button2_Summ";
+            this.button2_Summ.Size = new System.Drawing.Size(160, 48);
+            this.button2_Summ.TabIndex = 10;
+            this.button2_Summ.Text = "     Общая сумма";
+            this.button2_Summ.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2_Summ.UseVisualStyleBackColor = true;
+            this.button2_Summ.Click += new System.EventHandler(this.button2_Summ_Click);
+            // 
+            // button2_Fod
+            // 
+            this.button2_Fod.FlatAppearance.BorderSize = 0;
+            this.button2_Fod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2_Fod.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2_Fod.ForeColor = System.Drawing.Color.White;
+            this.button2_Fod.Image = global::DZ2zad3.Properties.Resources._33;
+            this.button2_Fod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2_Fod.Location = new System.Drawing.Point(12, 219);
+            this.button2_Fod.Name = "button2_Fod";
+            this.button2_Fod.Size = new System.Drawing.Size(160, 48);
+            this.button2_Fod.TabIndex = 9;
+            this.button2_Fod.Text = "     Заказ пищи";
+            this.button2_Fod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2_Fod.UseVisualStyleBackColor = true;
+            this.button2_Fod.Click += new System.EventHandler(this.button2_Fod_Click);
+            // 
+            // button2_Toplivo
+            // 
+            this.button2_Toplivo.FlatAppearance.BorderSize = 0;
+            this.button2_Toplivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2_Toplivo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2_Toplivo.ForeColor = System.Drawing.Color.White;
+            this.button2_Toplivo.Image = global::DZ2zad3.Properties.Resources._22;
+            this.button2_Toplivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2_Toplivo.Location = new System.Drawing.Point(12, 165);
+            this.button2_Toplivo.Name = "button2_Toplivo";
+            this.button2_Toplivo.Size = new System.Drawing.Size(160, 48);
+            this.button2_Toplivo.TabIndex = 8;
+            this.button2_Toplivo.Text = "     Заказ бензина";
+            this.button2_Toplivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2_Toplivo.UseVisualStyleBackColor = true;
+            this.button2_Toplivo.Click += new System.EventHandler(this.button2_Toplivo_Click);
+            // 
             // panel5_Focus
             // 
             this.panel5_Focus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
@@ -75,6 +138,23 @@
             this.panel5_Focus.Name = "panel5_Focus";
             this.panel5_Focus.Size = new System.Drawing.Size(10, 50);
             this.panel5_Focus.TabIndex = 7;
+            // 
+            // button2_Glav
+            // 
+            this.button2_Glav.FlatAppearance.BorderSize = 0;
+            this.button2_Glav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2_Glav.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2_Glav.ForeColor = System.Drawing.Color.White;
+            this.button2_Glav.Image = global::DZ2zad3.Properties.Resources._11;
+            this.button2_Glav.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2_Glav.Location = new System.Drawing.Point(12, 111);
+            this.button2_Glav.Name = "button2_Glav";
+            this.button2_Glav.Size = new System.Drawing.Size(160, 48);
+            this.button2_Glav.TabIndex = 7;
+            this.button2_Glav.Text = "     Главная";
+            this.button2_Glav.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2_Glav.UseVisualStyleBackColor = true;
+            this.button2_Glav.Click += new System.EventHandler(this.button2_Glav_Click);
             // 
             // panel2
             // 
@@ -104,6 +184,16 @@
             this.label1.Size = new System.Drawing.Size(66, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "BestOil";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DZ2zad3.Properties.Resources.Cars_pixar_6_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // panel4
             // 
@@ -182,96 +272,6 @@
             this.button2.Size = new System.Drawing.Size(26, 23);
             this.button2.TabIndex = 12;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DZ2zad3.Properties.Resources.Cars_pixar_6_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button5
-            // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = global::DZ2zad3.Properties.Resources.Business_Questions_icon1;
-            this.button5.Location = new System.Drawing.Point(12, 500);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(26, 23);
-            this.button5.TabIndex = 15;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button2_Summ
-            // 
-            this.button2_Summ.FlatAppearance.BorderSize = 0;
-            this.button2_Summ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2_Summ.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2_Summ.ForeColor = System.Drawing.Color.White;
-            this.button2_Summ.Image = global::DZ2zad3.Properties.Resources._55;
-            this.button2_Summ.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2_Summ.Location = new System.Drawing.Point(12, 273);
-            this.button2_Summ.Name = "button2_Summ";
-            this.button2_Summ.Size = new System.Drawing.Size(160, 48);
-            this.button2_Summ.TabIndex = 10;
-            this.button2_Summ.Text = "     Общая сумма";
-            this.button2_Summ.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2_Summ.UseVisualStyleBackColor = true;
-            this.button2_Summ.Click += new System.EventHandler(this.button2_Summ_Click);
-            // 
-            // button2_Fod
-            // 
-            this.button2_Fod.FlatAppearance.BorderSize = 0;
-            this.button2_Fod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2_Fod.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2_Fod.ForeColor = System.Drawing.Color.White;
-            this.button2_Fod.Image = global::DZ2zad3.Properties.Resources._33;
-            this.button2_Fod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2_Fod.Location = new System.Drawing.Point(12, 219);
-            this.button2_Fod.Name = "button2_Fod";
-            this.button2_Fod.Size = new System.Drawing.Size(160, 48);
-            this.button2_Fod.TabIndex = 9;
-            this.button2_Fod.Text = "     Заказ пищи";
-            this.button2_Fod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2_Fod.UseVisualStyleBackColor = true;
-            this.button2_Fod.Click += new System.EventHandler(this.button2_Fod_Click);
-            // 
-            // button2_Toplivo
-            // 
-            this.button2_Toplivo.FlatAppearance.BorderSize = 0;
-            this.button2_Toplivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2_Toplivo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2_Toplivo.ForeColor = System.Drawing.Color.White;
-            this.button2_Toplivo.Image = global::DZ2zad3.Properties.Resources._22;
-            this.button2_Toplivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2_Toplivo.Location = new System.Drawing.Point(12, 165);
-            this.button2_Toplivo.Name = "button2_Toplivo";
-            this.button2_Toplivo.Size = new System.Drawing.Size(160, 48);
-            this.button2_Toplivo.TabIndex = 8;
-            this.button2_Toplivo.Text = "     Заказ бензина";
-            this.button2_Toplivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2_Toplivo.UseVisualStyleBackColor = true;
-            this.button2_Toplivo.Click += new System.EventHandler(this.button2_Toplivo_Click);
-            // 
-            // button2_Glav
-            // 
-            this.button2_Glav.FlatAppearance.BorderSize = 0;
-            this.button2_Glav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2_Glav.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2_Glav.ForeColor = System.Drawing.Color.White;
-            this.button2_Glav.Image = global::DZ2zad3.Properties.Resources._11;
-            this.button2_Glav.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2_Glav.Location = new System.Drawing.Point(12, 111);
-            this.button2_Glav.Name = "button2_Glav";
-            this.button2_Glav.Size = new System.Drawing.Size(160, 48);
-            this.button2_Glav.TabIndex = 7;
-            this.button2_Glav.Text = "     Главная";
-            this.button2_Glav.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2_Glav.UseVisualStyleBackColor = true;
-            this.button2_Glav.Click += new System.EventHandler(this.button2_Glav_Click);
             // 
             // firstCastomToplivo1
             // 

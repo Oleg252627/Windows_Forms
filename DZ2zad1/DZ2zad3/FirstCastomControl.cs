@@ -17,6 +17,7 @@ namespace DZ2zad3
         public static double Fud { get; set; }
         public static double Toplivo { get; set; }
         private double GlobalSum;
+        private bool Flag_timer;
         public FirstCastomControl()
         {
             InitializeComponent();
@@ -25,42 +26,55 @@ namespace DZ2zad3
             GlobalSum = 0;
             I_fud = false;
             I_toplivo = false;
+            Flag_timer = true;
+            this.timer1.Tick += Timer1_Tick;
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            Start_Timer();
         }
 
         private void button1_S_Click(object sender, EventArgs e)
         {
-            if(I_fud)
+            if (Flag_timer)
             {
-                this.label2_Sum.Text =(Convert.ToDouble(this.label2_Sum.Text)+ Fud).ToString();
-                GlobalSum += Fud;
-                this.label3_GlobalSumm.Text = GlobalSum.ToString();
-                I_fud = false;
-            }
+                Flag_timer = false;
+                if (I_fud)
+                {
+                    this.label2_Sum.Text =(Convert.ToDouble(this.label2_Sum.Text)+ Fud).ToString();
+                    GlobalSum += Fud;
+                    this.label3_GlobalSumm.Text = GlobalSum.ToString();
+                    I_fud = false;
+                }
 
-            if (I_toplivo)
-            {
-                this.label2_Sum.Text = (Convert.ToDouble(this.label2_Sum.Text) + Toplivo).ToString();
-                GlobalSum += Toplivo;
-                this.label3_GlobalSumm.Text = GlobalSum.ToString();
-                I_toplivo = false;
+                if (I_toplivo)
+                {
+                    this.label2_Sum.Text = (Convert.ToDouble(this.label2_Sum.Text) + Toplivo).ToString();
+                    GlobalSum += Toplivo;
+                    this.label3_GlobalSumm.Text = GlobalSum.ToString();
+                    I_toplivo = false;
+                }
+                Start_Timer();
             }
+        }
+
+        private void Start_Timer()
+        {
+            this.timer1.Stop();
             var otvet = MessageBox.Show("Перейти к следующему клиенту", "Оповещение", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Information);
-            if(otvet==DialogResult.Yes)
+            if (otvet == DialogResult.Yes)
             {
+                Flag_timer = true;
                 this.label2_Sum.Text = "0";
                 FirstCastomFud.Flag_Fud = true;
                 FirstCastomToplivo.flag_toplivo = true;
             }
             else
             {
-                System.Threading.Thread.Sleep(3000);
-                this.label2_Sum.Text = "0";
-                FirstCastomFud.Flag_Fud = true;
-                FirstCastomToplivo.flag_toplivo = true;
+                this.timer1.Start();
             }
-
-            
         }
     }
 }
